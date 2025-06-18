@@ -49,9 +49,9 @@ const MostrarCharacters: FunctionalComponent<Data> = ({ data }) => {
   });
   return (
     <div>
-      <ul>
+      <ul class="todos">
         {data.map((p: Character) => (
-          <li>
+          <li class="card">
             <ul>
               <a href={`/characters/${p.id}`}>
                 <img src={p.image}></img>
