@@ -29,7 +29,9 @@ export const getEspecificPersonaje = async (id: string) => {
       image: e.image,
     };
   });
-  return personajeVerdadero;
+
+  const a = personajeVerdadero[0];
+  return a;
 };
 
 export const getPersonajesFavoritos = async (
