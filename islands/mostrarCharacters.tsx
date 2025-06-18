@@ -62,8 +62,8 @@ const MostrarCharacters: FunctionalComponent<Data> = ({ data }) => {
                   width={50}
                   onClick={() => cambiarEstado(p)}
                   src={numfav.includes(p.id)
-                    ? "estrella_rellena.png"
-                    : "estrella_vacia.png"}
+                    ? "/estrella_rellena.png"
+                    : "/estrella_vacia.png"}
                 />
               </li>
               <li>Casa: {p.house}</li>

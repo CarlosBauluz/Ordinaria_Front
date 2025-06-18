@@ -20,16 +20,16 @@ export const getEspecificPersonaje = async (id: string) => {
   const url = `https://hp-api.onrender.com/api/character/${id}`;
   const data = await fetch(url);
   const personaje = await data.json();
-  const personajeVerdadero = personaje.map((e) => { 
+  const personajeVerdadero = personaje.map((e) => {
     return {
       id: e.id,
       name: e.name,
       house: e.house,
       alive: e.alive,
       image: e.image,
-    }
-  })
-  return personajeVerdadero
+    };
+  });
+  return personajeVerdadero;
 };
 
 export const getPersonajesFavoritos = async (
